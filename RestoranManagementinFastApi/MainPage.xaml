@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RestoranManagementinFastApi.MainPage"
-             BackgroundColor="#F5F5F5">
+             >
 
     <Grid>
         <!-- Arka Plan Gradient -->
@@ -83,7 +83,7 @@
                               RowDefinitions="Auto,Auto"
                               ColumnDefinitions="Auto,*,Auto">
                             <Grid.GestureRecognizers>
-                                <TapGestureRecognizer />
+                                <TapGestureRecognizer Tapped="onRestaurantManagerLoginTransfer"/>
                             </Grid.GestureRecognizers>
 
                             <!-- Icon -->
@@ -149,7 +149,7 @@
                               RowDefinitions="Auto,Auto"
                               ColumnDefinitions="Auto,*,Auto">
                             <Grid.GestureRecognizers>
-                                <TapGestureRecognizer />
+                                <TapGestureRecognizer Tapped="onWaiterLoginTransfer" />
                             </Grid.GestureRecognizers>
 
                             <!-- Icon -->

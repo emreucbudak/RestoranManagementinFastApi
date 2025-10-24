@@ -4,11 +4,19 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:RestoranManagementinFastApi"
-    Title="">
+    Title=""
+    xmlns:pages="clr-namespace:RestoranManagementinFastApi.Pages">
 
     <ShellContent
-        Title=""
+
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+    <ShellContent
+    ContentTemplate="{DataTemplate pages:Login}"
+    Route="RestaurantManagerLogin" />
+    <ShellContent
+    ContentTemplate="{DataTemplate pages:WaiterLogin}"
+    Route="WaiterLogin" />
+    
 
 </Shell>

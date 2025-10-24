@@ -2,13 +2,22 @@
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
+      
 
         public MainPage()
         {
             InitializeComponent();
         }
+        private async void onRestaurantManagerLoginTransfer(object sender, EventArgs e)
+        {
+           
+            await Shell.Current.GoToAsync("///RestaurantManagerLogin");
+        }
+        private async void onWaiterLoginTransfer(object sender, EventArgs e)
+        {
 
+            await Shell.Current.GoToAsync("///WaiterLogin");
+        }
 
     }
 }
