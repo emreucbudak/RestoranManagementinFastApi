@@ -18,6 +18,12 @@
     <ShellContent
     ContentTemplate="{DataTemplate pages:WaiterLogin}"
     Route="WaiterLogin" />
-    
+    <ShellContent
+    ContentTemplate="{DataTemplate pages:RestaurantManagerPanel}"
+    Route="RestaurantManagerPanel" />
+    <ShellContent
+    ContentTemplate="{DataTemplate pages:WaiterPanel}"
+    Route="WaiterPanel" />
+
 
 </Shell>
