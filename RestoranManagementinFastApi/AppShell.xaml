@@ -33,6 +33,9 @@
     <ShellContent
     ContentTemplate="{DataTemplate pages:WaiterManagementPanel}"
     Route="WaiterManagementPanel" />
+    <ShellContent
+    ContentTemplate="{DataTemplate pages:TableManagementPanel}"
+    Route="TableManagementPanel" />
 
 
 </Shell>
