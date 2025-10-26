@@ -1,3 +1,5 @@
+using System.Threading.Tasks;
+
 namespace RestoranManagementinFastApi.Pages;
 
 public partial class RestaurantManagerPanel : ContentPage
@@ -9,5 +11,9 @@ public partial class RestaurantManagerPanel : ContentPage
 	private async void OnProductManagementTransfer (object sender, EventArgs e)
 	{
 		await Shell.Current.GoToAsync("///ProductPanel");
+	}
+	private async void OnProductCategoryManagementTransfer (object sender, EventArgs e)
+	{
+		await Shell.Current.GoToAsync("///ProductCategoryPanel");
 	}
 }
