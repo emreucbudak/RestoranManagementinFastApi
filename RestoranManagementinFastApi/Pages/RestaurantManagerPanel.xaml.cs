@@ -6,4 +6,8 @@ public partial class RestaurantManagerPanel : ContentPage
 	{
 		InitializeComponent();
 	}
+	private async void OnProductManagementTransfer (object sender, EventArgs e)
+	{
+		await Shell.Current.GoToAsync("///ProductPanel");
+	}
 }

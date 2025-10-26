@@ -24,6 +24,9 @@
     <ShellContent
     ContentTemplate="{DataTemplate pages:WaiterPanel}"
     Route="WaiterPanel" />
+    <ShellContent
+    ContentTemplate="{DataTemplate pages:ProductPanel}"
+    Route="ProductPanel" />
 
 
 </Shell>

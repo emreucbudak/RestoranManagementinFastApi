@@ -61,6 +61,9 @@
                     <Grid Padding="25"
                           RowDefinitions="Auto,Auto"
                           ColumnDefinitions="Auto,*,Auto">
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer />
+                        </Grid.GestureRecognizers>
 
                         <!-- Icon -->
                         <Border Grid.Row="0"
@@ -124,6 +127,9 @@
                     <Grid Padding="25"
                           RowDefinitions="Auto,Auto"
                           ColumnDefinitions="Auto,*,Auto">
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer />
+                        </Grid.GestureRecognizers>
 
                         <!-- Icon -->
                         <Border Grid.Row="0"
@@ -187,7 +193,9 @@
                     <Grid Padding="25"
                           RowDefinitions="Auto,Auto"
                           ColumnDefinitions="Auto,*,Auto">
-
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer />
+                        </Grid.GestureRecognizers>
                         <!-- Icon -->
                         <Border Grid.Row="0"
                                 Grid.RowSpan="2"
@@ -250,7 +258,9 @@
                     <Grid Padding="25"
                           RowDefinitions="Auto,Auto"
                           ColumnDefinitions="Auto,*,Auto">
-
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnProductManagementTransfer"/>
+                        </Grid.GestureRecognizers>
                         <!-- Icon -->
                         <Border Grid.Row="0"
                                 Grid.RowSpan="2"
