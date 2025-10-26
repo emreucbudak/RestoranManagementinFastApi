@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RestoranManagementinFastApi.Pages.WaiterManagementPanel"
+             BackgroundColor="#FF6B35">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="0" 
+                            Padding="30"
+                            VerticalOptions="Center">
+
+            <!-- Başlık Alanı -->
+            <VerticalStackLayout Spacing="15" Margin="0,0,0,50">
+
+                <!-- Logo -->
+                <Border WidthRequest="100"
+                        HeightRequest="100"
+                        StrokeThickness="0"
+                        BackgroundColor="White"
+                        HorizontalOptions="Center"
+                        Padding="0">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="50"/>
+                    </Border.StrokeShape>
+                    <Border.Shadow>
+                        <Shadow Brush="Black" Opacity="0.3" Radius="15" Offset="0,8"/>
+                    </Border.Shadow>
+                    <Label Text="👨‍🍳"
+                           FontSize="50"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                </Border>
+
+                <!-- Başlık -->
+                <Label Text="Garson Yönetimi"
+                       FontSize="32"
+                       FontAttributes="Bold"
+                       TextColor="White"
+                       HorizontalOptions="Center"/>
+
+                <Label Text="Garson personellerini yönetin"
+                       FontSize="16"
+                       TextColor="White"
+                       Opacity="0.9"
+                       HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+
+            <!-- Butonlar -->
+            <VerticalStackLayout Spacing="20">
+
+                <!-- Garson Ekle/Kaldır Butonu -->
+                <Border StrokeThickness="0"
+                        BackgroundColor="White"
+                        Padding="0">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <Border.Shadow>
+                        <Shadow Brush="Black" Opacity="0.2" Radius="10" Offset="0,5"/>
+                    </Border.Shadow>
+                    <Grid Padding="25"
+                          RowDefinitions="Auto,Auto"
+                          ColumnDefinitions="Auto,*,Auto">
+
+                        <!-- Icon -->
+                        <Border Grid.Row="0"
+                                Grid.RowSpan="2"
+                                Grid.Column="0"
+                                WidthRequest="55"
+                                HeightRequest="55"
+                                StrokeThickness="0"
+                                BackgroundColor="#FFF0EB"
+                                VerticalOptions="Center"
+                                Padding="0">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="15"/>
+                            </Border.StrokeShape>
+                            <Label Text="⚙️"
+                                   FontSize="28"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"/>
+                        </Border>
+
+                        <!-- Text -->
+                        <Label Grid.Row="0"
+                               Grid.Column="1"
+                               Text="Garson Ekle/Kaldır"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               TextColor="#333333"
+                               VerticalOptions="End"
+                               Margin="15,0,0,0"/>
+
+                        <Label Grid.Row="1"
+                               Grid.Column="1"
+                               Text="Garson ekle veya kaldır"
+                               FontSize="13"
+                               TextColor="#888888"
+                               VerticalOptions="Start"
+                               Margin="15,2,0,0"/>
+
+                        <!-- Arrow -->
+                        <Label Grid.Row="0"
+                               Grid.RowSpan="2"
+                               Grid.Column="2"
+                               Text="›"
+                               FontSize="35"
+                               TextColor="#FF6B35"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </Grid>
+                </Border>
+
+                <!-- Tüm Garsonlar Butonu -->
+                <Border StrokeThickness="0"
+                        BackgroundColor="White"
+                        Padding="0">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <Border.Shadow>
+                        <Shadow Brush="Black" Opacity="0.2" Radius="10" Offset="0,5"/>
+                    </Border.Shadow>
+                    <Grid Padding="25"
+                          RowDefinitions="Auto,Auto"
+                          ColumnDefinitions="Auto,*,Auto">
+
+                        <!-- Icon -->
+                        <Border Grid.Row="0"
+                                Grid.RowSpan="2"
+                                Grid.Column="0"
+                                WidthRequest="55"
+                                HeightRequest="55"
+                                StrokeThickness="0"
+                                BackgroundColor="#FFF0EB"
+                                VerticalOptions="Center"
+                                Padding="0">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="15"/>
+                            </Border.StrokeShape>
+                            <Label Text="👥"
+                                   FontSize="28"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"/>
+                        </Border>
+
+                        <!-- Text -->
+                        <Label Grid.Row="0"
+                               Grid.Column="1"
+                               Text="Tüm Garsonlar"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               TextColor="#333333"
+                               VerticalOptions="End"
+                               Margin="15,0,0,0"/>
+
+                        <Label Grid.Row="1"
+                               Grid.Column="1"
+                               Text="Garson listesini görüntüle"
+                               FontSize="13"
+                               TextColor="#888888"
+                               VerticalOptions="Start"
+                               Margin="15,2,0,0"/>
+
+                        <!-- Arrow -->
+                        <Label Grid.Row="0"
+                               Grid.RowSpan="2"
+                               Grid.Column="2"
+                               Text="›"
+                               FontSize="35"
+                               TextColor="#FF6B35"
+                               VerticalOptions="Center"
+                               Margin="10,0,0,0"/>
+                    </Grid>
+                </Border>
+
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
