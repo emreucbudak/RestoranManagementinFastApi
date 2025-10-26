@@ -10,4 +10,8 @@ public partial class Login : ContentPage
 	{
 		await Shell.Current.GoToAsync("///MainPage");
 	}
+	private async void onLoginClicked (object sender, EventArgs e)
+	{
+		await Shell.Current.GoToAsync("///RestaurantManagerPanel");
+	}
 }

@@ -11,4 +11,8 @@ public partial class WaiterLogin : ContentPage
 		await Shell.Current.GoToAsync("///MainPage");
 
 	}
+	private async void onLoginClicked ( object sender, EventArgs e)
+	{
+		await Shell.Current.GoToAsync("///WaiterPanel");
+	}
 }
