@@ -27,6 +27,9 @@
     <ShellContent
     ContentTemplate="{DataTemplate pages:ProductPanel}"
     Route="ProductPanel" />
+    <ShellContent
+    ContentTemplate="{DataTemplate pages:ProductCategoryPanel}"
+    Route="ProductCategoryPanel" />
 
 
 </Shell>
