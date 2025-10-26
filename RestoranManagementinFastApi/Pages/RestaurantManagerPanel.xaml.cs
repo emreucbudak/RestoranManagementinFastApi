@@ -20,4 +20,8 @@ public partial class RestaurantManagerPanel : ContentPage
 	{
 		await Shell.Current.GoToAsync("///WaiterManagementPanel");
 	}
+	private async void OnTableManagementTransfer (object sender, EventArgs e)
+	{
+		await Shell.Current.GoToAsync("///TableManagementPanel");
+	}
 }
