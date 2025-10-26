@@ -16,4 +16,8 @@ public partial class RestaurantManagerPanel : ContentPage
 	{
 		await Shell.Current.GoToAsync("///ProductCategoryPanel");
 	}
+	private async void onAddWaiterButton (object sender, EventArgs e)
+	{
+		await Shell.Current.GoToAsync("///WaiterManagementPanel");
+	}
 }
