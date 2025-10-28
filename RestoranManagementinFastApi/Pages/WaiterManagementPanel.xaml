@@ -15,7 +15,8 @@
                 HorizontalOptions="Start"
                 VerticalOptions="Start"
                 Margin="20,20,0,0"
-                Clicked="OnBackButtonClicked"/>
+                Clicked="OnBackButtonClicked"
+                Grid.ZIndex="1"/>
 
         <ScrollView>
             <VerticalStackLayout Spacing="0" 
