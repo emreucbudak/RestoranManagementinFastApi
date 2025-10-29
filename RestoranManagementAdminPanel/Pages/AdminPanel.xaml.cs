@@ -6,4 +6,8 @@ public partial class AdminPanel : ContentPage
 	{
 		InitializeComponent();
 	}
+	private async void onRestoranManagementPanelTransferClicked (object sender, EventArgs e)
+	{
+		await Shell.Current.GoToAsync("///RestoranManagementPanel");
+	}
 }
