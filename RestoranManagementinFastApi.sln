@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36518.9 d17.14
+VisualStudioVersion = 17.14.36518.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestoranManagementinFastApi", "RestoranManagementinFastApi\RestoranManagementinFastApi.csproj", "{04D45121-18A2-458A-9DE2-2488A530F899}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestoranManagementAdminPanel", "RestoranManagementAdminPanel\RestoranManagementAdminPanel.csproj", "{702118FC-AECB-42BF-BFF5-ACA2EA834E3A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,11 @@ Global
 		{04D45121-18A2-458A-9DE2-2488A530F899}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04D45121-18A2-458A-9DE2-2488A530F899}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04D45121-18A2-458A-9DE2-2488A530F899}.Release|Any CPU.Build.0 = Release|Any CPU
+		{702118FC-AECB-42BF-BFF5-ACA2EA834E3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{702118FC-AECB-42BF-BFF5-ACA2EA834E3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{702118FC-AECB-42BF-BFF5-ACA2EA834E3A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{702118FC-AECB-42BF-BFF5-ACA2EA834E3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{702118FC-AECB-42BF-BFF5-ACA2EA834E3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
