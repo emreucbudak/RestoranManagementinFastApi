@@ -4,11 +4,19 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:RestoranManagementAdminPanel"
-    Shell.NavBarIsVisible="False">
+    Shell.NavBarIsVisible="False"
+    xmlns:pages="clr-namespace:RestoranManagementAdminPanel.Pages">
 
     <ShellContent
-        Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+    <ShellContent
+        ContentTemplate="{DataTemplate pages:AdminPanel}"
+        Route="AdminPanel"/>
+    <ShellContent
+        ContentTemplate="{DataTemplate pages:RestoranManagementPanel}"
+        Route="RestoranManagementPanel"/>
+
+
 
 </Shell>

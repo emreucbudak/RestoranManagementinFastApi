@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="RestoranManagementAdminPanel.Pages.AdminPanel"
-            
+             x:Class="RestoranManagementAdminPanel.Pages.RestoranManagementPanel"
+             Title="RestoranManagementPanel"
              BackgroundColor="#F5F5F5">
 
     <Grid>
@@ -17,10 +17,10 @@
             <HorizontalStackLayout Padding="20"
                                    VerticalOptions="Center"
                                    Spacing="15">
-                <Label Text="🍽️"
+                <Label Text="🏪"
                        FontSize="32"
                        VerticalOptions="Center"/>
-                <Label Text="Admin Paneli"
+                <Label Text="Restoran Yönetimi"
                        FontSize="24"
                        FontAttributes="Bold"
                        TextColor="White"
@@ -46,13 +46,13 @@
                     <Shadow Brush="Black" Opacity="0.1" Radius="15" Offset="0,4"/>
                 </Border.Shadow>
                 <Border.GestureRecognizers>
-                    <TapGestureRecognizer  Tapped="onRestoranManagementPanelTransferClicked"/>
+                    <TapGestureRecognizer />
                 </Border.GestureRecognizers>
 
                 <HorizontalStackLayout Spacing="15"
                                        Padding="20"
                                        VerticalOptions="Center">
-                    <Label Text="🏪"
+                    <Label Text="➕"
                            FontSize="32"
                            VerticalOptions="Center"/>
                     <Label Text="Restoran Ekle"
@@ -63,7 +63,7 @@
                 </HorizontalStackLayout>
             </Border>
 
-            <!-- Restoran Yöneticisi Ekle Butonu -->
+            <!-- Tüm Restoranlar Butonu -->
             <Border BackgroundColor="White"
                     StrokeThickness="0"
                     WidthRequest="300"
@@ -81,10 +81,10 @@
                 <HorizontalStackLayout Spacing="15"
                                        Padding="20"
                                        VerticalOptions="Center">
-                    <Label Text="👤"
+                    <Label Text="📋"
                            FontSize="32"
                            VerticalOptions="Center"/>
-                    <Label Text="Restoran Yöneticisi Ekle"
+                    <Label Text="Tüm Restoranlar"
                            FontSize="18"
                            FontAttributes="Bold"
                            TextColor="#2C3E50"
@@ -92,36 +92,6 @@
                 </HorizontalStackLayout>
             </Border>
 
-            <!-- Çıkış Butonu -->
-            <Border BackgroundColor="#E74C3C"
-                    StrokeThickness="0"
-                    WidthRequest="300"
-                    HeightRequest="80"
-                    Margin="0,20,0,0">
-                <Border.StrokeShape>
-                    <RoundRectangle CornerRadius="15"/>
-                </Border.StrokeShape>
-                <Border.Shadow>
-                    <Shadow Brush="Black" Opacity="0.2" Radius="15" Offset="0,4"/>
-                </Border.Shadow>
-                <Border.GestureRecognizers>
-                    <TapGestureRecognizer />
-                </Border.GestureRecognizers>
-
-                <HorizontalStackLayout Spacing="15"
-                                       Padding="20"
-                                       VerticalOptions="Center"
-                                       HorizontalOptions="Center">
-                    <Label Text="🚪"
-                           FontSize="32"
-                           VerticalOptions="Center"/>
-                    <Label Text="Çıkış"
-                           FontSize="18"
-                           FontAttributes="Bold"
-                           TextColor="White"
-                           VerticalOptions="Center"/>
-                </HorizontalStackLayout>
-            </Border>
 
         </VerticalStackLayout>
 
